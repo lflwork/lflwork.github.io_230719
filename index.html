@@ -110,9 +110,10 @@
 <p><a target="_blank" rel="noopener" href="https://github.com/settings/ssh/new">添加密钥</a></p>
 <p><img src="../images/hexo-03.jpg"></p>
 <h3 id="配置网站信息"><a href="#配置网站信息" class="headerlink" title="配置网站信息"></a>配置网站信息</h3><p>修改  _config.yml 文件以下选项</p>
-<p>title: <code>工作笔记</code><br>subtitle: <code>学习每一步步步都算数</code><br>description: <code>工作学习笔记</code><br>keywords: <code>java,php,app,软件,开发,产品,服务器,小程序</code><br>author: <code>lflwork</code><br>language: <code>zh-CN</code><br>timezone: <code>Asia/Shanghai</code><br>url: <code>https://www.biji.work</code><br># 新增 root<br>root: <code>/</code><br>new_post_name: <code>:year-:month-:day-:title.md</code><br>deploy:<br>  type: git<br>  repo: <code>git@github.com:lflwork/lflwork.github.io.git</code></p>
-<p>  repo 是 仓库的 ssh 地址<br>  <img src="../images/hexo-04.jpg"></p>
-<h3 id="新增-CNAME-文件"><a href="#新增-CNAME-文件" class="headerlink" title="新增 CNAME 文件"></a>新增 <code>CNAME</code> 文件</h3><p>  在 source 目录下新增 <code>CNAME</code> 文件，内容为二级域名：<code>www.biji.work</code><br>  _posts markdown 源文件<br>  images 图片目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">title: 工作笔记</span><br><span class="line">subtitle: 学习每一步步步都算数</span><br><span class="line">description: 工作学习笔记</span><br><span class="line">keywords: java,php,app,软件,开发,产品,服务器,小程序</span><br><span class="line">author: lflwork</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: Asia/Shanghai</span><br><span class="line">url: https://www.biji.work</span><br><span class="line">root: /</span><br><span class="line">new_post_name: :year-:month-:day-:title.md <span class="comment"># File name of new posts</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:lflwork/lflwork.github.io.git</span><br></pre></td></tr></table></figure>
+
+<p>repo 是 仓库的 ssh 地址<br><img src="../images/hexo-04.jpg"></p>
+<h3 id="新增-CNAME-文件"><a href="#新增-CNAME-文件" class="headerlink" title="新增 CNAME 文件"></a>新增 <code>CNAME</code> 文件</h3><p>在 source 目录下新增 <code>CNAME</code> 文件，内容为二级域名：<code>www.biji.work</code><br>_posts markdown 源文件<br>images 图片目录</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">➜ <span class="built_in">pwd</span></span><br><span class="line">/blog/source</span><br><span class="line">➜ tree</span><br><span class="line">├── CNAME</span><br><span class="line">├── _posts</span><br><span class="line">│   └── hello-world.md</span><br><span class="line">└── images</span><br><span class="line">    └── hello-world.jpg</span><br><span class="line">➜ <span class="built_in">cat</span> CNAME </span><br><span class="line">www.biji.work</span><br></pre></td></tr></table></figure>
 
 <h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>每次推送都执行以下3条命令，避免缓存引起错误</p>
@@ -123,7 +124,7 @@
 <h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>以 <a target="_blank" rel="noopener" href="https://www.godaddy.com/">GoDaddy</a> 为例</p>
 <p>添加 <code>CNAME</code> 到 <code>lflwork.github.io</code></p>
 <p><img src="../images/hexo-05.jpg"></p>
-<p>域名访问：<a href="http://www.biji.work/">www.biji.work</a></p>
+<p>域名访问：<a href="http://www.biji.work/">www.biji.work</a> 和 <a target="_blank" rel="noopener" href="https://lflwork.github.io/">lflwork.github.io</a> 、 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 页面一致</p>
 
       
     </div>
